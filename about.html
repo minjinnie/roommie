@@ -6,46 +6,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>RoommieMatch</title>
-    <link rel="icon" href="rabbit.ico" />
+    <link rel="icon" href="/public/rabbit.ico" />
     <link rel="stylesheet" href="index.css">
-    <script src="main.js"></script>
+    <script src="/src/main.js"></script>
   </head>
 
 
-  <body>
-    <main>
-    <div class="MobileNav" data-mobile-nav>
-      <div class="MobileNav-overlay" data-mobile-nav-overlay></div>
-      <div class="MobileNav-inner">
-        <div class="MobileNav-trigger" data-mobile-nav-trigger>
-          <div class="MobileNav-trigger-inner"></div>
-        </div>
-        <ul class="MobileNav-nav" data-mobile-nav-list>
-          <li class="MobileNav-item" data-mobile-nav-item="1">
-            <div class="MobileNav-item-title">
-              <a href="about.html">About</a>
-            </div>
-          </li>
-          <li class="MobileNav-item" data-mobile-nav-item="2">
-            <div class="MobileNav-item-title">
-              <a href="survey.html">Survey</a>
-            </div>
-          </li>
-          <li class="MobileNav-item" data-mobile-nav-item="3">
-            <div class="MobileNav-item-title">
-              <a href="#">GitHub</a>
-            </div>
-          </li>
-          <li class="MobileNav-item" data-mobile-nav-item="4">
-            <div class="MobileNav-item-title">
-              <a href="#">Login</a>
-            </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </main>
     
   <body>
   
@@ -53,6 +19,8 @@
       <div class="Header-inner" data-header-nav>
         <h1 class="header-font"><a href="index.html">Roommate Finder</a></h1>
         <nav class="Header-nav" data-nav>
+          <div id="playControls" style="display: none">
+            <div id="playerName"></div> </div>
           <div class="Header-nav-item" data-nav-item="1">
             <a href="about.html">About</a>
           </div>
@@ -63,19 +31,19 @@
             <a href="https://github.com/minjinnie/roommie">GitHub</a>
           </div>
           <div class="Header-nav-item" data-nav-item="4">
-            <a href="login.html">Login</a>
+            <a href="/src/login.html">Login</a>
           </div>
         </nav>
         <button class="MobileNav-trigger" data-mobile-nav-trigger>
           <div class="MobileNav-trigger-inner"></div>
         </button>
       </div>
-    </header>
-    
 
     <div class="content-wrapper">
         <div class="vertical-line"></div>
         <content>
+          <br>
+          
             <big>Roommate Finder</big>
             <br>
             <br>

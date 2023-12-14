@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
-
-  <head>
-    <meta charset="UTF-8" />
-    <title>RoommieMatch</title>
-    <link rel="icon" href="/public/rabbit.ico" />
-    <link rel="stylesheet" href="index.css">
-    <script src="main.js"></script>
-  </head>
-
-
-  <body>
-  
-    <header class="Header" data-header>
+export default function App() {
+    return (
+      <div className='body bg-dark text-light'>
+        <header class="Header" data-header>
       <div class="Header-inner" data-header-nav>
         <h1 class="header-font"><a href="login.html">Roommate Finder</a></h1>
         <nav class="Header-nav" data-nav>
@@ -28,7 +15,7 @@
             <a href="https://github.com/minjinnie/roommie">GitHub</a>
           </div>
           <div class="Header-nav-item" data-nav-item="4">
-            <a href="/src/login.html">Login</a>
+            <a href="login.html">Login</a>
           </div>
         </nav>
         <button class="MobileNav-trigger" data-mobile-nav-trigger>
@@ -36,14 +23,17 @@
         </button>
       </div>
     </header>
-    <div id="root"></div>
-    <script type="module" src="/index.jsx"></script>
-    
-    <footer>
-      <hr class="top-bar" />
-      <span class="text-reset">Minjin Sung</span>
-      <br />
-      <a href="https://github.com/minjinnie/roommie">GitHub</a>
-    </footer>
-  </body>
-</html>
+  
+        <main>App components go here</main>
+  
+        <footer className='bg-dark text-white-50'>
+          <div className='container-fluid'>
+            <span className='text-reset'>Author Name(s)</span>
+            <a className='text-reset' href='https://github.com/webprogramming260/simon-react'>
+              Source
+            </a>
+          </div>
+        </footer>
+      </div>
+    );
+  }
