@@ -7,7 +7,7 @@
     <meta charset="UTF-8" />
     <title>RoommieMatch</title>
     <link rel="icon" href="rabbit.ico" />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
     <script src="main.js"></script>
   </head>
 
@@ -51,6 +51,8 @@
       <div class="Header-inner" data-header-nav>
         <h1 class="header-font"><a href="index.html">Roommate Finder</a></h1>
         <nav class="Header-nav" data-nav>
+          <div id="playControls" style="display: none">
+            <div id="playerName"></div> </div>
           <div class="Header-nav-item" data-nav-item="1">
             <a href="#">About</a>
           </div>
@@ -58,7 +60,7 @@
             <a href="#">Survey</a>
           </div>
           <div class="Header-nav-item" data-nav-item="3">
-            <a href="https://github.com/minjinnie/startup">GitHub</a>
+            <a href="https://github.com/minjinnie/roommie">GitHub</a>
           </div>
           <div class="Header-nav-item" data-nav-item="4">
             <a href="login.html">Login</a>
@@ -94,31 +96,7 @@
                     </div>
     
                     <div class="form-group">
-                        <label for="number" id="number-label">How likely will you rate our service? (Out of 10)</label>
-                        <input type="number" id="number" class="form-control" min="1" max="10" placeholder="Rating" required/>
-                    </div>
-    
-                    <div class="form-group">
-                        <label for="current-role" id="role-label">Which option best describes your current role?</label>
-                        <select id="dropdown" name="role" class="form-control" required>
-                            <option disabled selected value>Select current role</option>
-                            <option value="student">Student</option>
-                            <option value="job">Full Time Job</option>
-                            <option value="learner">Full Time Learner</option>
-                            <option value="preferNo">Prefer not to say</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-    
-                    <div class="form-group">
-                        <p>Would you recommend your friend to purchase from us?</p>
-                        <div><input type="radio" name="user-recommend" value="definitely" class="input-radio"><span>Definitely</span></div>
-                        <div><input type="radio" name="user-recommend" value="maybe" class="input-radio"><span>Maybe</span></div>
-                        <div><input type="radio" name="user-recommend" value="not-sure" class="input-radio"><span>Not sure</span></div>
-                    </div>
-    
-                    <div class="form-group">
-                        <p>Any comments or suggestions?</p>
+                        <p>Anything else?</p>
                         <textarea name="comment" id="comments" class="input-textarea" placeholder="Comments" rows="8" cols="80"></textarea>
                     </div>
     
@@ -132,10 +110,11 @@
     </html>
 
     <footer>
-      <hr class="top-bar" />
-      <span class="text-reset">Minjin Sung</span>
-      <br />
-      <a href="https://github.com/minjinnie/startup">GitHub</a>
-    </footer>
-  </body>
-</html>
+        <hr class="top-bar" />
+        <span class="text-reset">Minjin Sung</span>
+        <br />
+        <a href="https://github.com/minjinnie/roommie">GitHub</a>
+      </footer>
+    </body>
+  </html>
+  
