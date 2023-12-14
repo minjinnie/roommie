@@ -1,49 +1,97 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
+
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="icon" href="favicon.ico" />
+    <title>Roommaate Finder</title>
+    <link rel="icon" href="rabbit.ico" />
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
   </head>
+
+
   <body>
-    <header>
-      <h1>Simon<sup>&reg;</sup></h1>
-
-      <nav>
-        <menu>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="play.html">Play</a></li>
-          <li><a href="scores.html">Scores</a></li>
-          <li><a href="about.html">About</a></li>
-        </menu>
-      </nav>
-
-      <hr />
-    </header>
-
     <main>
-      <div id="picture" class="picture-box"><img width="400px" src="placeholder.jpg" alt="random" /></div>
-
-      <p>
-        Simon is a repetitive memory game where you follow the demonstrated color sequence until you make a mistake. The
-        longer the sequence you repeat, the greater your score.
-      </p>
-
-      <p>
-        The name Simon is a registered trademark of Milton-Bradley. Our use of the name and the game is for non-profit
-        educational use only. No part of this code or program should be used outside of that definition.
-      </p>
-
-      <div id="quote">
-        <div>Words are cheap. Show me the code.</div>
-        <div>- Linus Torvalds</div>
+    <div class="MobileNav" data-mobile-nav>
+      <div class="MobileNav-overlay" data-mobile-nav-overlay></div>
+      <div class="MobileNav-inner">
+        <div class="MobileNav-trigger" data-mobile-nav-trigger>
+          <div class="MobileNav-trigger-inner"></div>
+        </div>
+        <ul class="MobileNav-nav" data-mobile-nav-list>
+          <li class="MobileNav-item" data-mobile-nav-item="1">
+            <div class="MobileNav-item-title">
+              <a href="about.html">About</a>
+            </div>
+          </li>
+          <li class="MobileNav-item" data-mobile-nav-item="2">
+            <div class="MobileNav-item-title">
+              <a href="survey.html">Survey</a>
+            </div>
+          </li>
+          <li class="MobileNav-item" data-mobile-nav-item="3">
+            <div class="MobileNav-item-title">
+              <a href="#">GitHub</a>
+            </div>
+          </li>
+          <li class="MobileNav-item" data-mobile-nav-item="4">
+            <div class="MobileNav-item-title">
+              <a href="#">Login</a>
+            </div>
+            </div>
+          </li>
+        </ul>
       </div>
-    </main>
+    </div>
+  </main>
+    
+  <body>
+  
+    <header class="Header" data-header>
+      <div class="Header-inner" data-header-nav>
+        <h1 class="header-font"><a href="index.html">Roommate Finder</a></h1>
+        <nav class="Header-nav" data-nav>
+          <div class="Header-nav-item" data-nav-item="1">
+            <a href="about.html">About</a>
+          </div>
+          <div class="Header-nav-item" data-nav-item="2">
+            <a href="survey.html">Survey</a>
+          </div>
+          <div class="Header-nav-item" data-nav-item="3">
+            <a href="https://github.com/minjinnie/startup">GitHub</a>
+          </div>
+          <div class="Header-nav-item" data-nav-item="4">
+            <a href="login.html">Login</a>
+          </div>
+        </nav>
+        <button class="MobileNav-trigger" data-mobile-nav-trigger>
+          <div class="MobileNav-trigger-inner"></div>
+        </button>
+      </div>
+    </header>
+    
 
+    <div class="content-wrapper">
+        <div class="vertical-line"></div>
+        <content>
+            <big>Roommate Finder</big>
+            <br>
+            <br>
+            <br>is a revolutionary platform that simplifies the process of finding compatible roommates.
+            <br> <br>Say goodbye to the stress of endless interviews and incompatible living situations.
+            <br> <br>Our intelligent algorithm considers lifestyle preferences, habits, and personal interests
+            <br> to pair you with the perfect roommate match.
+            <br> <br>Whether you're a student, young professional, or anyone seeking a harmonious living arrangement,
+            <br> RoomieMatch ensures you'll find your ideal cohabitant effortlessly.
+        </content>
+        <div class="vertical-line"></div>
+    </div>
+    
     <footer>
-      <hr />
-      <span class="text-reset">Author Name(s)</span>
+      <hr class="top-bar" />
+      <span class="text-reset">Minjin Sung</span>
       <br />
       <a href="https://github.com/webprogramming260/simon-html">GitHub</a>
     </footer>
